@@ -39,7 +39,7 @@ const ConsultationProcess = () => {
         <div className="relative flex flex-col md:flex-row items-center md:justify-between gap-10 md:gap-6">
           {steps.map((step, index) => (
             <div key={index} className="cursor-pointer relative flex flex-col items-center text-center md:w-1/4 h-[200px] shadow  rounded-2xl p-4">
-              <div className="p-4 bg-[#e96c06] rounded-full w-14 h-14 flex items-center justify-center mb-4 shadow-md">
+              <div className="p-4 bg-[#FF1744] rounded-full w-14 h-14 flex items-center justify-center mb-4 shadow-md">
                 {step.icon}
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-1">{step.title}</h3>

@@ -1,6 +1,6 @@
 import React from "react";
 import { FaShieldAlt, FaRocket, FaHeadset, FaCogs } from "react-icons/fa";
-const ICON_COLOR = '#e96c06'
+const ICON_COLOR = '#FF1744'
 const ICON_SIZE = 40
 const features = [
   {
@@ -21,7 +21,7 @@ const features = [
   {
     icon: <FaCogs color={ICON_COLOR} size={ICON_SIZE}/>,
     title: "Built for Customization",
-    description: "From modules to UI elements, every part of ProGateTechnology is built to be shaped around your workflow.",
+    description: "From modules to UI elements, every part of Badi Eats is built to be shaped around your workflow.",
   },
 ];
 
@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
           Why Choose Us?
         </h2>
         <p className="text-center text-gray-600 max-w-xl mx-auto mb-12">
-          Whether you're a startup or scaling enterprise, ProGateTechnology is designed to fuel your business journey.
+          Whether you're a startup or scaling enterprise, Badi Eats is designed to fuel your business journey.
         </p>
 
         <div className="space-y-8">

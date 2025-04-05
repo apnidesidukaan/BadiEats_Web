@@ -1,9 +1,35 @@
-import Image from "next/image";
+import NavbarMega from "./components/NavbarMega";
+import HeroSection from "./components/Hero";
+import ServicesSection from "./components/Services";
+import WhyChooseUs from "./components/WhyChooseUs";
+import ScrollingPromoBanner from "./components/ScrollingPromoBanner";
+import Banner from "./components/Banner";
+import ConsultationProcess from "./components/ConsultationProcess";
+import NewsSection from "./components/NewsSection";
+import Footer from "./components/Footer";
 
-export default function Home() {
+//==================================================================
+export default function App() {
+  //==================================================================
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-     
+    <div className="scrollbar p-2 bg-background text-primary-text">
+      <NavbarMega />
+      <HeroSection />
+      {/* <ScrollingPromoBanner /> */}
+      <ServicesSection />
+      <Banner
+        message="New features launching this month! Book your free consultation now."
+        actionText="Book Now"
+        // onAction={() => console.log("Banner CTA clicked!")}
+      />
+      <WhyChooseUs />
+      <ConsultationProcess />
+      <NewsSection />
+
+
+
+      <Footer />
     </div>
   );
 }
+//==================================================================

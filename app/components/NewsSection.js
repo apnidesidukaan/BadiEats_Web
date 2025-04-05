@@ -6,7 +6,7 @@ const articles = [
     excerpt: "Explore how digital tools are transforming local businesses into global players.",
     image: "news.png",
     date: "April 3, 2025",
-    author: "Team ProGateTechnology",
+    author: "Team Badi Eats",
   },
   {
     title: "Top 5 ERP Features Every SME Needs",

@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Progate Technology</title>
+        <title>Badi Eats</title>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

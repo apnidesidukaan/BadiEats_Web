@@ -1,6 +1,6 @@
 import React from "react";
 import { FaBoxOpen, FaUsers, FaTruckMoving, FaStore } from "react-icons/fa";
-const ICON_COLOR = '#e96c06'
+const ICON_COLOR = '#FF1744'
 const ICON_SIZE = 60
 const services = [
   {
@@ -33,7 +33,7 @@ const ServicesSection = () => {
           Our Services
         </h2>
         <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
-          Everything your business needs to scale from local to global. ProGateTechnology is your one-stop SaaS shop.
+          Everything your business needs to scale from local to global. Badi Eats is your one-stop SaaS shop.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 ">

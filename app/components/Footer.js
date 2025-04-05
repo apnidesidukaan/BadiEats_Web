@@ -8,12 +8,12 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="mt-4 bg-gradient-to-r from-[#8d3018] via-[#e96c06] to-[#db630a] p-10 text-gray-200">
-      <div className="max-w-7xl mx-auto py-12 px-6 grid md:grid-cols-4 gap-10">
+    <footer className="mt-4 bg-gradient-to-r from-[#dec9b5] via-[#FFFAF0] to-[#FFFAF0] p-10 text-primary-text">
+      <div className="max-w-7xl mx-auto py-12 px-6 grid md:grid-cols-4 gap-10 text-primary-text">
         {/* Logo & Description */}
         <div>
           <img src="/logo.png" alt="logo"  />
-          <h4 className="text-xl font-bold text-white mb-2">ProGateTechnology</h4>
+          <h4 className="text-xl font-bold text-primary-text mb-2">Badi Eats</h4>
           <p className="text-sm">
             From Local Hustle to Global Muscle — powering businesses across industries with cutting-edge solutions.
           </p>
@@ -21,7 +21,7 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div>
-          <h5 className="text-white font-semibold mb-4">Quick Links</h5>
+          <h5 className="text-primary-text font-semibold mb-4">Quick Links</h5>
           <ul className="space-y-2 text-sm">
             <li><a href="#" className="hover:text-orange-400">Home</a></li>
             <li><a href="#" className="hover:text-orange-400">Services</a></li>
@@ -32,7 +32,7 @@ const Footer = () => {
 
         {/* Resources */}
         <div>
-          <h5 className="text-white font-semibold mb-4">Resources</h5>
+          <h5 className="text-primary-text font-semibold mb-4">Resources</h5>
           <ul className="space-y-2 text-sm">
             <li><a href="#" className="hover:text-orange-400">Blog</a></li>
             <li><a href="#" className="hover:text-orange-400">FAQs</a></li>
@@ -43,7 +43,7 @@ const Footer = () => {
 
         {/* Stay Connected */}
         <div>
-          <h5 className="text-white font-semibold mb-4">Stay Connected</h5>
+          <h5 className="text-primary-text font-semibold mb-4">Stay Connected</h5>
           <p className="text-sm mb-4">
             Get the latest updates and insights from the world of smart business.
           </p>
@@ -58,7 +58,7 @@ const Footer = () => {
 
       {/* Bottom bar */}
       <div className="border-t border-gray-800 text-sm py-4 px-6 text-center mt-8">
-        © {new Date().getFullYear()} ProGateTechnology. All rights reserved.
+        © {new Date().getFullYear()} Badi Eats. All rights reserved.
       </div>
     </footer>
   );

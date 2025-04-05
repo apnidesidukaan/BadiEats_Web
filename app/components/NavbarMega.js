@@ -64,34 +64,38 @@ const NavbarMega = () => {
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
   return (
-    <nav className="rounded bg-gradient-to-r from-[#8d3018] via-[#e96c06] to-[#db630a] ">
+    <nav className="rounded bg-gradient-to-r from-[#dec9b5] via-[#FFFAF0] to-[#FFFAF0] ">
       <div className="flex justify-between items-center mx-auto max-w-screen-xl p-4">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-3">
-          <img src="/logo.png" alt="Logo" className="" />
-          <span className="text-white text-2xl font-bold hidden md:block">
-            ProGate Technology
+          <img src="/logo.png" alt="Logo" className="w-20 h-20" />
+          <span className="text-primary-text text-2xl font-bold hidden md:block">
+            Badi Eats
           </span>
         </a>
 
         {/* Mobile Menu Toggle */}
         <button
           onClick={toggleMenu}
-          className="md:hidden p-2 rounded-lg text-white hover:bg-white/10"
+          className="md:hidden p-2 rounded-lg text-primary-text hover:bg-white/10"
         >
           {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
         </button>
 
         {/* Menu */}
         <ul
-          className={`md:flex md:space-x-8 items-center text-white font-medium ${menuOpen ? "block" : "hidden"}`}
+          className={`md:flex md:space-x-8 items-center text-primary-text font-medium ${menuOpen ? "block" : "hidden"}`}
         >
+
+          <span className="cursor-pointer ml-2 px-2 py-1 text-xs font-semibold rounded-full bg-accent text-white animate-pulse">
+            Join Us
+          </span>
           {menuItems.map((item, index) => (
             <li key={index} className="relative">
               {item.subMenu ? (
                 <button
                   onClick={toggleDropdown}
-                  className="flex items-center gap-1 py-2 px-4 hover:text-yellow-200"
+                  className="flex items-center gap-1 py-2 px-4 hover:text-accent"
                 >
                   {item.label}
                   <svg className="w-3 h-3 ml-1" fill="none" viewBox="0 0 10 6">
@@ -105,7 +109,7 @@ const NavbarMega = () => {
                   </svg>
                 </button>
               ) : (
-                <a href={item.href} className="py-2 px-4 block hover:text-yellow-200">
+                <a href={item.href} className="py-2 px-4 block hover:text-accent">
                   {item.label}
                 </a>
               )}

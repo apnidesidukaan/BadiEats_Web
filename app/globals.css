@@ -14,15 +14,15 @@
   --gradient-secondary: linear-gradient(90deg, #32CD32, #00C853); /* Fresh Green Gradient */
   --gradient-accent: linear-gradient(90deg, #f0303e, #f7e5e7); /* Golden Yellow Gradient */
   /* Brand Colors (Food Delivery Theme) */
-  --color-background: #8d3018; /* Warm and inviting */
-  --color-background-section: #FAF9F6; /* Pure white */
+  --color-background: #FFFAF0; /* Warm and inviting */
+  --color-background-section: #FFFFFF; /* Pure white */
 
   --color-primary: #FF4500; /* Vibrant Orange (Call-to-action) */
-  --color-primary-muted: #FF6F3C; /* Softer Orange (Hover/Muted) */
+  --color-primary-muted: #4a4a4aab; /* Softer Orange (Hover/Muted) */
   --color-background-muted: #d1d5dc; /* Muted grey text for hints */
 
   --color-secondary: #32CD32; /* Fresh Green (Healthy Vibes) */
-  --color-accent: #e96c06; /* Golden Yellow (Highlights) */
+  --color-accent: #FF1744; /* Golden Yellow (Highlights) */
   --color-accent-muted: #f7e5e7; /* Golden Yellow (Highlights) */
   --color-dark: #2D2D2D; /* Deep Grey (Text and Dark Mode) */
 
@@ -86,3 +86,24 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: var(--color-accent);
+  /* Scrollbar Track */
+  border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: var(--bg-accent);
+  /* Scrollbar Thumb */
+  border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-accent-dark);
+  /* Hover Color */
+}
+
