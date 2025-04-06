@@ -5,7 +5,7 @@ const ICON_COLOR = '#FF1744'
 const ICON_SIZE = 40
 const Banner = ({ message, actionText, onAction }) => {
   return (
-    <div className="mt-4 w-full bg-gradient-to-r from-[#dec9b5] via-[#FFFAF0] to-[#FFFAF0] text-primary-text px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-3">
+    <div className="mt-4 w-full rounded shadow bg-gradient-to-r from-[#dec9b5] via-[#FFFAF0] to-[#FFFAF0] text-primary-text px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-3">
       <div className="flex items-center gap-3">
         <HiSpeakerphone className="text-2xl" color={ICON_COLOR} size={ICON_SIZE} />
         <p className="text-sm md:text-base font-medium">{message}</p>

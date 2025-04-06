@@ -4,7 +4,7 @@ import { Button } from "./ui/button/button";
 
 const HeroSection = () => {
   return (
-    <section className="mt-0 rounded  bg-gradient-to-r from-[#dec9b5] via-[#FFFAF0] to-[#FFFAF0] text-white">
+    <section className="mt-2 rounded  shadow   bg-gradient-to-r from-[#dec9b5] via-[#FFFAF0] to-[#FFFAF0] text-white">
       <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Text Content */}
         <div>

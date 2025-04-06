@@ -64,11 +64,11 @@ const NavbarMega = () => {
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
   return (
-    <nav className="rounded bg-gradient-to-r from-[#dec9b5] via-[#FFFAF0] to-[#FFFAF0] ">
+    <nav className="rounded shadow bg-gradient-to-r from-[#dec9b5] via-[#FFFAF0] to-[#FFFAF0] ">
       <div className="flex justify-between items-center mx-auto max-w-screen-xl p-4">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-3">
-          <img src="/logo.png" alt="Logo" className="w-20 h-20" />
+          <img src="/logo.jpg" alt="Logo" className="w-20 h-20 rounded-full" />
           <span className="text-primary-text text-2xl font-bold hidden md:block">
             Badi Eats
           </span>

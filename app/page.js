@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 export default function App() {
   //==================================================================
   return (
-    <div className="scrollbar p-2 bg-background text-primary-text">
+    <div className="scrollbar p-1 bg-background-section text-primary-text">
       <NavbarMega />
       <HeroSection />
       {/* <ScrollingPromoBanner /> */}
