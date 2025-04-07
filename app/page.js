@@ -7,6 +7,7 @@ import Banner from "./components/Banner";
 import ConsultationProcess from "./components/ConsultationProcess";
 import NewsSection from "./components/NewsSection";
 import Footer from "./components/Footer";
+import OurLocation from "./components/OurLocation";
 
 //==================================================================
 export default function App() {
@@ -20,14 +21,14 @@ export default function App() {
       <Banner
         message="New features launching this month! Book your free consultation now."
         actionText="Book Now"
-        // onAction={() => console.log("Banner CTA clicked!")}
+      // onAction={() => console.log("Banner CTA clicked!")}
       />
       <WhyChooseUs />
       <ConsultationProcess />
       <NewsSection />
 
 
-
+      <OurLocation />
       <Footer />
     </div>
   );

@@ -5,8 +5,9 @@ import {
   FaTwitter,
   FaLinkedinIn,
 } from "react-icons/fa";
-
+//===============================================================================
 const Footer = () => {
+  //===============================================================================
   return (
     <footer className="bg-gradient-to-r shadow rounded from-[#dec9b5]/80 via-[#FFFAF0]/80 to-[#FFFAF0]/80 text-primary-text">
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
