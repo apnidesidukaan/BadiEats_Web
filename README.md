@@ -44,40 +44,6 @@ Micro Frontends decompose a monolithic frontend into **independent, modular appl
 
 ---
 
-## 📦 Installation
-
-1. **Clone the Repository:**
-
-```bash
-git clone https://github.com/your-org/BadiEats.git
-cd BadiEats
-```
-
-2. **Set Up Environment Variables:**
-
-Create a `.env` file in the root directory:
-
-```env
-MYSQL_HOST=localhost
-MYSQL_PORT=3306
-MYSQL_USER=root 
-MYSQL_PASS=yourpassword
-MYSQL_DB=badi_eats
-JWT_SECRET=your_jwt_secret
-```
-
-3. **Install Dependencies:**
-
-```bash
-npm install
-```
-
-4. **Run the Application:**
-
-```bash
-npm run dev
-```
-
 ---
 
 ## 📖 Contribution Guidelines
