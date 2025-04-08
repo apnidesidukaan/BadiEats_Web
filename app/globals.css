@@ -49,6 +49,7 @@
   --text-3xl: 2.5rem; /* 40px (Hero Headline) */
   --text-4xl: 1.5rem; /* 40px (Hero Headline) */
   --text-5xl: 3.5rem; /* 40px (Hero Headline) */
+  --text-8xl: 1.5rem; /* 40px (Hero Headline) */
 
   /* Shadows (Soft and subtle) */
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);

@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import HiringBadge from "./ui/Badges/hiringBadge";
+import MarketplaceBadge from "./ui/Badges/MarketplaceBadge";
 
 const menuItems = [
   {
@@ -42,10 +44,7 @@ const menuItems = [
       },
     ],
   },
-  {
-    label: "Marketplace",
-    href: "#",
-  },
+
   {
     label: "Resources",
     href: "#",
@@ -86,10 +85,7 @@ const NavbarMega = () => {
         <ul
           className={`md:flex md:space-x-8 items-center text-primary-text font-medium ${menuOpen ? "block" : "hidden"}`}
         >
-
-          <span className="cursor-pointer ml-2 px-2 py-1 text-xs font-semibold rounded-full bg-accent text-white animate-pulse">
-            Join Us
-          </span>
+          <HiringBadge />
           {menuItems.map((item, index) => (
             <li key={index} className="relative">
               {item.subMenu ? (
@@ -115,6 +111,7 @@ const NavbarMega = () => {
               )}
             </li>
           ))}
+          <MarketplaceBadge />
         </ul>
       </div>
 

@@ -50,10 +50,10 @@ const Footer = () => {
             Get the latest updates and insights from the world of smart business.
           </p>
           <div className="flex space-x-4">
-            <a href="#" className="p-2 border rounded-full hover:bg-blue-500 hover:text-white transition-colors"><FaFacebookF /></a>
-            <a href="#" className="p-2 border rounded-full hover:bg-pink-500 hover:text-white transition-colors"><FaInstagram /></a>
-            <a href="#" className="p-2 border rounded-full hover:bg-sky-400 hover:text-white transition-colors"><FaTwitter /></a>
-            <a href="#" className="p-2 border rounded-full hover:bg-blue-700 hover:text-white transition-colors"><FaLinkedinIn /></a>
+            <a href="#" className="p-2 border-2 border-accent  rounded-full bg-blue-500 text-white transition-colors"><FaFacebookF /></a>
+            <a href="#" className="p-2 border-2 border-accent rounded-full bg-pink-500 text-white transition-colors"><FaInstagram /></a>
+            <a href="#" className="p-2 border-2 border-accent rounded-full bg-sky-400 text-white transition-colors"><FaTwitter /></a>
+            <a href="#" className="p-2 border-2 border-accent rounded-full bg-blue-700 text-white transition-colors"><FaLinkedinIn /></a>
           </div>
         </div>
       </div>
