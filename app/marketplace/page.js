@@ -17,6 +17,22 @@ const MarketPlaceHome = () => {
       quantity: "3.6g",
     },
     {
+      id: 1,
+      title: "Lakmé 9to5 Primer + Matte Lipstick",
+      price: 349,
+      image: "/products/lipstick.png",
+      eta: "15 mins",
+      quantity: "3.6g",
+    },
+    {
+      id: 1,
+      title: "Lakmé 9to5 Primer + Matte Lipstick",
+      price: 349,
+      image: "/products/lipstick.png",
+      eta: "15 mins",
+      quantity: "3.6g",
+    },
+    {
       id: 2,
       title: "Maybelline Fit Me Foundation 30ml",
       price: 499,
@@ -143,19 +159,22 @@ const MarketPlaceHome = () => {
       <div className="scrollbar p-1 bg-background-section text-primary-text">
 
 
-        <BlinkitNavbar />
-        <ProductSection
-          title="Dairy, Bread & Eggs"
-          dummyProducts={dummyProductsDailry}
-        />
-        <ProductSection
-          title="Best Cosmetics"
-          dummyProducts={dummyProducts}
-        />
-        <ProductSection
-          title="Rolling paper & tobacco"
-          dummyProducts={dummyProductsPaan}
-        />
+        <BlinkitNavbar showCategory={true} />
+        <div className="flex flex-col gap-2 py-4 m-auto w-full max-w-[1200px]">
+          <ProductSection
+            title="Dairy, Bread & Eggs"
+            dummyProducts={dummyProductsDailry}
+          />
+
+          <ProductSection
+            title="Best Cosmetics"
+            dummyProducts={dummyProducts}
+          />
+          <ProductSection
+            title="Rolling paper & tobacco"
+            dummyProducts={dummyProductsPaan}
+          />
+        </div>
         <SEOTextRichSection />
         <Footer />
       </div>

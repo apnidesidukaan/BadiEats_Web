@@ -6,7 +6,7 @@ import { Button } from "../ui/button/button";
 const HeroVendor = ({ setIsAddVendorModalOpen }) => {
   return (
     <section className="bg-[#fefcf8] py-16">
-      <div className="container mx-auto px-4 flex flex-col-reverse lg:flex-row items-center gap-10">
+      <div className="container max-w-5xl mx-auto px-4 flex flex-col-reverse lg:flex-row items-center gap-10">
         {/* Left Content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           <h1 className="text-4xl sm:text-5xl font-extrabold text-primary-text mb-4 leading-tight">
@@ -17,14 +17,19 @@ const HeroVendor = ({ setIsAddVendorModalOpen }) => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <Button
-            inverse
+              inverse
               onClick={() => setIsAddVendorModalOpen(true)}
             >
-
-                Get Started
-       
+               Join as a Delivery Partner
             </Button>
-            
+
+            <Button
+
+              onClick={() => setIsAddVendorModalOpen(true)}
+            >
+             Or Register as a Vendor
+            </Button>
+
           </div>
         </div>
 

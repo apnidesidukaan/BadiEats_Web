@@ -8,7 +8,7 @@ import { Button } from "../ui/button/button";
 import { IconButton } from "../ui/button/iconButton";
 import CartDrawer from "../ui/drawer/AddToCart";
 
-export default function BlinkitNavbar() {
+export default function BlinkitNavbar({showCategory}) {
   const [openCart, setOpenCart] = useState(false);
 const categories = [
   { name: "Dairy & Eggs", image: "/products/milk.png" },
@@ -49,7 +49,7 @@ const categories = [
         <div className="flex items-center gap-4 min-w-fit self-end sm:self-auto">
           <IconButton>
 
-            <FaUserAlt size={17} className=" text-background cursor-pointer mr-2" /> Login
+            <FaUserAlt size={17} className="mr-2"/> Login
           </IconButton>
           <IconButton
             onClick={() => setOpenCart(true)}
@@ -57,7 +57,7 @@ const categories = [
           >
 
 
-            <MdShoppingCart size={18} className=" text-background cursor-pointer mr-2" /> Cart
+            <MdShoppingCart size={18}  className="mr-2"/> Cart
           </IconButton>
 
         </div>
@@ -66,7 +66,7 @@ const categories = [
 
       {/* ==================== Category Tabs ================== */}
 
-      <CategorySelector categories={categories} />
+      {showCategory ?<CategorySelector categories={categories} /> : null}
       {/* ==================== Add TO Cart  ================== */}
       <CartDrawer
         isOpen={openCart}
